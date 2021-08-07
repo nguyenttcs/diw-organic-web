@@ -1,0 +1,212 @@
+/*///////////[ HOME PAGE ]//////////*/
+.banner {
+    color: $color-secondary;
+
+    .carousel-item {
+        p {
+            font-size: 24px;
+        }
+    }
+}
+
+.organic-good {
+    margin-bottom: 150px;
+    .item {
+        position: relative;
+        .content {
+            padding: 15px 20px;
+            background-color: $color-primary;
+            border-radius: 20px;
+            border: 3px solid $color-secondary;
+            text-align: center;
+            position: absolute;
+            bottom: -25%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            min-width: 90%;
+
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.why-organic-food {
+    .why-img {
+        img {
+            min-height: 140px;
+        }
+    }
+}
+
+.organic-food-develop {
+    .develop-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: $color-primary;
+        margin: 0 auto;
+        @include d-flex(row, center, center);
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
+.blog-organic-food {
+    .sub-title {
+        font-size: 24px;
+    }
+
+    .blog {
+        .content {
+            position: relative;
+            @include d-flex(row, center, center);
+
+            .box {
+                width: 80%;
+                height: 60%;
+                border-radius: 15px;
+                position: absolute;
+
+                &.grey-box {
+                    background-color: $color-grey;
+                    top: 30%;
+                }
+
+                &.green-box {
+                    background-color: $color-primary;
+                    left: 6%;
+                    color: $color-secondary;
+
+                    .quote-icon {
+                        font-size: 150px;
+                        margin-top: -50px;
+                        margin-left: 20px;
+                    }
+
+                    .des {
+                        margin-top: -130px;
+                        padding: 0 100px;
+                    }
+                }
+            }
+        }
+
+        &.even {
+            flex-direction: row-reverse;
+
+            .content {
+                .box {
+                    &.green-box {
+                        left: 14%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.how-to-buy {
+    .buy {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 40%;
+            right: -10px;
+            font-size: 40px;
+            background: url("../../img/arrow.png") no-repeat;
+            width: 28px;
+            height: 28px;
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .organic-good {
+        .item {
+            .content {
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .blog-organic-food {
+        .blog {
+            .content {
+                .box {
+                    width: 100%;
+                    height: 90%;
+
+                    &.grey-box {
+                        display: none;
+                    }
+
+                    &.green-box {
+                        left: 0;
+
+                        .quote-icon {
+                            font-size: 100px;
+                            margin-top: -30px;
+                            margin-left: 20px;
+                        }
+
+                        .des {
+                            margin-top: -85px;
+                            padding: 0 20px;
+                        }
+                    }
+                }
+            }
+
+            &.even {
+                .content {
+                    .box {
+                        &.green-box {
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .how-to-buy {
+        .buy {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .organic-good {
+        .item {
+            margin-bottom: 150px;
+        }
+    }
+
+    .blog-organic-food {
+        .blog {
+            .content {
+                .box {
+                    position: unset;
+                    height: 200px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

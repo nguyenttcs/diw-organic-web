@@ -1,0 +1,60 @@
+/*///////////[ ANIMATION ]//////////*/
+@keyframes image-zoom {
+	from {
+		transform: scale(1);
+	}
+
+	to {
+		transform: scale(1.1);
+	}
+}
+
+@keyframes zoom-in-text {
+	from {
+		font-size: 52px;
+	}
+
+	to {
+		font-size: 80px;
+	}
+}
+
+@keyframes zoom-in-text-1024 {
+	from {
+		font-size: $fs-30;
+	}
+
+	to {
+		font-size: $fs-52;
+	}
+}
+
+@keyframes zoom-in-text-mobile {
+	from {
+		font-size: $fs-30;
+	}
+
+	to {
+		font-size: 40px;
+	}
+}
+
+@keyframes icon-move {
+	from {
+		transform: translateY(-15px);
+	}
+
+	to {
+		transform: translateY(15px);
+	}
+}
+
+@keyframes increase-width {
+	from {
+		width: 0%;
+	}
+
+	to {
+		width: 50%;
+	}
+}

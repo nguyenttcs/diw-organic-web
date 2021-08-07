@@ -1,0 +1,37 @@
+/*///////////[ COMMON ]//////////*/
+.text-bold {
+    font-family: 'DarkerGrotesque-SemiBold', sans-serif;
+}
+
+.bg-green {
+    background-color: $color-primary !important;
+}
+
+.bg-beie {
+    background-color: $color-secondary;
+}
+
+.title {
+    font-family: 'Charm-Bold', sans-serif;
+    font-size: 40px;
+}
+
+.title-section {
+    font-family: 'Charm-Bold', sans-serif;
+    font-size: 40px;
+    color: $color-primary;
+}
+
+.btn-white {
+    background-color: white;
+    color: $color-primary;
+    padding: 10px 40px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-white {
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+}

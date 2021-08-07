@@ -1,0 +1,22 @@
+/*///////////[ FOOTER ]//////////*/
+footer {
+    background-image: url('../../img/footer.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 650px;
+    padding: 100px 0 50px 0;
+    color: $color-secondary;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        height: 1000px;
+    }
+}

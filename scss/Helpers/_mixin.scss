@@ -1,0 +1,34 @@
+@mixin d-flex($flex-direction, $justify-content, $align-items) {
+	display: flex;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-direction: $flex-direction;
+}
+
+@mixin section-style($bg, $color-text, $pd) {
+	width: 100%;
+	height: 100vh;
+	padding: $pd;
+	background: $bg;
+	color: $color-text;
+}
+
+@mixin section-mobile {
+	padding: 60px 30px;
+	height: auto;
+}
+
+@mixin text-style($f-family, $fs, $lh, $lp, $tt) {
+	font-family: $f-family;
+	font-size: $fs;
+	line-height: $lh;
+	letter-spacing: $lp;
+	text-transform: $tt;
+}
+
+@mixin text-stroke($color, $tf, $tsw, $tsc) {
+	color: $color;
+	-webkit-text-fill-color: $tf;
+	-webkit-text-stroke-width: $tsw;
+	-webkit-text-stroke-color: $tsc;
+}
