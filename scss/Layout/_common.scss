@@ -3,6 +3,16 @@
     font-family: 'DarkerGrotesque-SemiBold', sans-serif;
 }
 
+.dropdown-menu {
+    .dropdown-item {
+        padding: 10px 20px !important;
+        
+        &:hover {
+            color: $color-primary !important;
+        }
+    }
+}
+
 .bg-green {
     background-color: $color-primary !important;
 }
@@ -26,12 +36,42 @@
     background-color: white;
     color: $color-primary;
     padding: 10px 40px;
-    border-radius: 15px;
+    border-radius: 10px;
+    border: 1px solid $color-primary;
 }
 
-@media screen and (max-width: 768px) {
-    .btn-white {
-        padding: 5px 10px;
-        border-radius: 10px;
+.btn-green {
+    color: $color-secondary;
+    background-color: $color-primary;
+    padding: 10px 40px;
+    border-radius: 10px;
+
+    &:hover {
+        color: $color-secondary;
+        background-color: $color-green-1;
+    }
+}
+
+
+.banner-small {
+    background-image: url('../../img/about-page/banner-about.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 325px;
+    @include d-flex(row, center, center);
+        
+    .content {
+        .left {
+            @include d-flex(row, unset, center);
+            button {
+                font-size: 24px;
+                font-family: 'Charm-Regular', sans-serif;
+                padding: 10px 20px;
+            }
+        }
+        .right {
+            color: $color-secondary;
+        }
     }
 }

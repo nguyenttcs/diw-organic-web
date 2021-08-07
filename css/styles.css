@@ -141,6 +141,13 @@ p {
   font-family: "DarkerGrotesque-SemiBold", sans-serif;
 }
 
+.dropdown-menu .dropdown-item {
+  padding: 10px 20px !important;
+}
+.dropdown-menu .dropdown-item:hover {
+  color: #58732F !important;
+}
+
 .bg-green {
   background-color: #58732F !important;
 }
@@ -164,15 +171,47 @@ p {
   background-color: white;
   color: #58732F;
   padding: 10px 40px;
-  border-radius: 15px;
+  border-radius: 10px;
+  border: 1px solid #58732F;
 }
 
-@media screen and (max-width: 768px) {
-  .btn-white {
-    padding: 5px 10px;
-    border-radius: 10px;
-  }
+.btn-green {
+  color: #F2F0EB;
+  background-color: #58732F;
+  padding: 10px 40px;
+  border-radius: 10px;
 }
+.btn-green:hover {
+  color: #F2F0EB;
+  background-color: #3D531B;
+}
+
+.banner-small {
+  background-image: url("../../img/about-page/banner-about.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 325px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.banner-small .content .left {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  flex-direction: row;
+}
+.banner-small .content .left button {
+  font-size: 24px;
+  font-family: "Charm-Regular", sans-serif;
+  padding: 10px 20px;
+}
+.banner-small .content .right {
+  color: #F2F0EB;
+}
+
 /*///////////[ HEADER ]//////////*/
 header .navbar .nav-item .nav-link {
   text-transform: uppercase;
@@ -316,6 +355,10 @@ footer {
   .organic-good .item .content p {
     font-size: 22px;
   }
+  .organic-good .btn-white {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
 
   .blog-organic-food .blog .content .box {
     width: 100%;
@@ -353,6 +396,158 @@ footer {
     position: unset;
     height: 200px;
     margin-top: 20px;
+  }
+}
+.about-page .core-value .core-item .w-90 {
+  background-color: #F2F0EB;
+  padding: 30px;
+  width: 99%;
+  min-height: 300px;
+}
+.about-page .different [class*=col-] {
+  padding: 0;
+}
+.about-page .different .items .right {
+  color: #F2F0EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 15px 7%;
+}
+.about-page .different .items.even {
+  flex-direction: row-reverse;
+}
+.about-page .process .content {
+  background-image: url("../../img/about-page/process.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+.about-page .process .content .list {
+  justify-content: space-between;
+  padding: 20px;
+}
+.about-page .process .content .list .item {
+  background: rgba(88, 115, 47, 0.8);
+  border-radius: 15px;
+  color: #F2F0EB;
+  padding: 15% 20px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  transition: all 1s;
+}
+.about-page .process .content .list .item:hover {
+  border: 2px solid #F2F0EB;
+}
+
+@media screen and (max-width: 768px) {
+  .about-page .core-value .core-item .w-90 {
+    min-height: 380px;
+  }
+  .about-page .process .content {
+    height: 950px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-page .different .items .right {
+    padding: 50px 7%;
+  }
+  .about-page .process .content {
+    height: 1200px;
+  }
+}
+.products-page .banner-small {
+  background-image: url("../../img/product-raucu/bannerSP.png");
+}
+.products-page .banner-small.trai-cay {
+  background-image: url("../../img/product-traicay/bannerSP.png");
+}
+.products-page .banner-small.ngu-coc {
+  background-image: url("../../img/product-ngucoc/bannerSP.png");
+}
+.products-page .sanpham h3 {
+  text-align: center;
+  color: #58732f;
+  font-weight: bold;
+  margin-top: -10px;
+}
+.products-page .sanpham p {
+  text-align: center;
+  color: #58732f;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.products-page .sanpham .item {
+  margin: 10px 0;
+}
+.products-page .sanpham .item p {
+  text-transform: capitalize;
+}
+.products-page .sanpham .item .item-hover {
+  position: relative;
+}
+.products-page .sanpham .item .item-hover .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.products-page .sanpham .item .icon {
+  color: #f2f0eb;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.products-page .sanpham .item:hover .overlay {
+  opacity: 1;
+}
+.products-page #pagination {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.products-page #pagination .page-item .page-link {
+  color: #58732F;
+}
+.products-page #pagination .page-item.active .page-link {
+  background-color: #58732F;
+  color: #F2F0EB;
+  border: 1px solid #58732F;
+}
+
+@media screen and (max-width: 576px) {
+  .products-page .tag-product ul {
+    flex-direction: column;
+  }
+  .products-page .tag-product ul li {
+    margin: 0 !important;
+  }
+  .products-page .tag-product ul button {
+    width: 100%;
+    margin: 5px 0 !important;
+  }
+  .products-page .tag-product .dropdown {
+    width: 100%;
+    text-align: center;
+  }
+  .products-page #pagination .right p {
+    text-align: left !important;
   }
 }
 

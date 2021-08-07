@@ -1,0 +1,123 @@
+.products-page {
+
+    .banner-small {
+        background-image: url('../../img/product-raucu/bannerSP.png');
+
+        &.trai-cay {
+            background-image: url('../../img/product-traicay/bannerSP.png');  
+        }
+
+        &.ngu-coc {
+            background-image: url('../../img/product-ngucoc/bannerSP.png');  
+        }
+    }
+
+    .sanpham {
+        h3 {
+            text-align: center;
+            color: #58732f;
+            font-weight: bold;
+            margin-top: -10px;
+        }
+
+        p {
+            text-align: center;
+            color: #58732f;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .item {
+            margin: 10px 0;
+            
+            p {
+                text-transform: capitalize;
+            }
+            .item-hover {
+                position: relative;
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    opacity: 0;
+                    transition: 0.3s ease;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 20px;
+                }
+            }
+
+            .icon {
+                color: #f2f0eb;
+                font-size: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            &:hover {
+                .overlay {
+                    opacity: 1; 
+                }
+            }
+        }
+    }
+
+    #pagination {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .page-item {
+            .page-link {
+                color: $color-primary;
+            }
+
+            &.active {
+                .page-link {
+                    background-color: $color-primary;
+                    color: $color-secondary;
+                    border: 1px solid $color-primary;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .products-page {
+        .tag-product {
+            ul {
+                flex-direction: column;
+                li {
+                    margin: 0 !important;
+                }
+                button {
+                    width: 100%;
+                    margin: 5px 0 !important;
+                }
+            }
+
+            .dropdown {
+                width: 100%;
+                text-align: center;
+            }
+            
+        }
+
+        #pagination {
+            .right {
+                p {
+                    text-align: left !important;
+                }
+            }
+        }
+    }
+}

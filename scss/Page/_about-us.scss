@@ -1,0 +1,99 @@
+.about-page {
+    .core-value {
+        .core-item {
+            .w-90 {
+                background-color: $color-secondary;
+                padding: 30px;
+                width: 99%;
+                min-height: 300px;
+            }
+        }
+    }
+
+    .different {
+        [class*="col-"] {
+            padding: 0;
+        }
+
+        .items {
+            .right {
+                color: $color-secondary;
+                @include d-flex(row, center, center);
+                padding: 15px 7%;
+            }
+
+            &.even {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    .process {
+        .content {
+            background-image: url("../../img/about-page/process.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 550px;
+            display: flex;
+            align-items: center;
+
+            .list {
+                justify-content: space-between;
+                padding: 20px;
+
+                .item {
+                    background: rgba(88, 115, 47, 0.8);
+                    border-radius: 15px;
+                    color: $color-secondary;
+                    padding: 15% 20px;
+                    min-height: 350px;
+                    display: flex;
+                    align-items: center;
+                    transition: all 1s;
+
+                    &:hover {
+                        border: 2px solid $color-secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-page {
+        .core-value {
+            .core-item {
+                .w-90 {
+                    min-height: 380px;
+                }
+            }
+        }
+
+        .process {
+            .content {
+                height: 950px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-page {
+        .different {
+            .items {
+                .right {
+                    padding: 50px 7%;
+                }
+            }
+        }
+
+        .process {
+            .content {
+                height: 1200px;
+            }
+        }
+    }
+    
+}

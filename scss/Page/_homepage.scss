@@ -132,6 +132,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
     .organic-good {
         .item {
             .content {
@@ -139,6 +140,11 @@
                     font-size: 22px;
                 }
             }
+        }
+
+        .btn-white {
+            padding: 5px 10px;
+            border-radius: 10px;
         }
     }
 
@@ -192,6 +198,7 @@
 }
 
 @media screen and (max-width: 576px) {
+
     .organic-good {
         .item {
             margin-bottom: 150px;
