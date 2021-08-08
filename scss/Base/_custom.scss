@@ -17,3 +17,37 @@
     }
 }
 
+.btn-outline-success {
+    color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover {
+        color: #fff;
+        background-color: $color-primary;
+        border-color: $color-primary;
+    }
+}
+
+.modal-header .close {
+    padding: 1rem;
+    margin: -2.5rem -1rem -1rem auto;
+    font-size: 3rem;
+}
+
+.modal-title {
+    font-family: 'Charm-Bold', sans-serif;
+    color: $color-primary;
+}
+
+@media (max-width: 768px){
+    #modalLogin,
+    #modalSignUp {
+        img {
+            display: none;
+        }
+    }
+
+    .modal {
+        overflow: scroll;
+    }
+}

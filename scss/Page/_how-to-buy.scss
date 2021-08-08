@@ -1,0 +1,70 @@
+.how-to-buy-page {
+    .banner-small {
+        background-image: url("../../img/how-to-buy/bannerSP.png");
+    }
+
+    .steps {
+        margin: 100px 0;
+        height: 500px;
+        position: relative;
+        @include d-flex(row, center, center);
+
+        p {
+            font-size: 24px;
+        }
+
+        .box {
+            width: 80%;
+            height: 60%;
+            border-radius: 15px;
+            position: absolute;
+
+            &.grey-box {
+                background-color: $color-grey;
+                top: 30%;
+            }
+
+            &.green-box {
+                background-color: $color-primary;
+                left: 6%;
+                color: $color-secondary;
+                padding: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .how-to-buy-page {
+        .steps {
+            height: 600px;
+    
+            .box {
+                height: 70%;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .how-to-buy-page {
+        .steps {
+            margin: 100px 0;
+    
+            p {
+                font-size: 20px;
+            }
+    
+            .box {
+                width: 90%;
+                height: 90%;
+    
+                &.grey-box {
+                    display: none;
+                }
+            }
+        }
+    }
+}

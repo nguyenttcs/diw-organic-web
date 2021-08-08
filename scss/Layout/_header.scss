@@ -1,6 +1,7 @@
 /*///////////[ HEADER ]//////////*/
 header {
     .navbar {
+        transition: all .5s ease-in-out,padding .5s ease-in-out;
         .nav-item {
             .nav-link {
                 text-transform: uppercase;
@@ -8,12 +9,27 @@ header {
                 padding: 5px 20px;
             }
 
-            &.active {
+            &:hover {
                 .nav-link {
                     border: 1px solid $color-secondary;
                     border-radius: 10px;
                 }
             }
+        }
+
+        .nav-right {
+            span {
+                cursor: pointer;
+            }
+        }
+
+        // For sticky header
+        &.nav-sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 99;
         }
     }
 }

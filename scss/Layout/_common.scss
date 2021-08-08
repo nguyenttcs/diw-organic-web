@@ -50,8 +50,11 @@
         color: $color-secondary;
         background-color: $color-green-1;
     }
-}
 
+    &.btn-login {
+        padding: unset;
+    }
+}
 
 .banner-small {
     background-image: url('../../img/about-page/banner-about.png');
@@ -75,3 +78,72 @@
         }
     }
 }
+
+#pagination {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .page-item {
+        .page-link {
+            color: $color-primary;
+        }
+
+        &.active {
+            .page-link {
+                background-color: $color-primary;
+                color: $color-secondary;
+                border: 1px solid $color-primary;
+            }
+        }
+    }
+}
+
+.btn-link {
+    color: $color-primary !important;
+
+    &:focus {
+        outline: 0 !important;
+        box-shadow: none;
+    }
+}
+
+.form-control {
+    border: 1px solid $color-primary;
+}
+
+.accordion {
+    .card {
+        border: none;
+
+        .card-header {
+            background: none;
+            margin-bottom: 0;
+            border: 1px solid $color-primary;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-body {
+            border: 1px solid $color-primary;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #pagination {
+        .right {
+            p {
+                text-align: left !important;
+            }
+        }
+    }
+}
+
+
+

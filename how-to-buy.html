@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris-Organic Web</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/libs/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fc38faa136.js" crossorigin="anonymous"></script>
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- My Style CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+    <div class="wrapper products-page how-to-buy-page">
+        <!-- Header & nav -->
+        <header>
+            <div class="logo text-center py-2 bg-beie">
+                <a href="index.html"><img src="./img/logo.png" class="img-fluid" alt="Logo"></a>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-green py-2">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
+                        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarMain">
+                        <ul class="navbar-nav mr-auto py-2">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Giới Thiệu</a>
+                            </li>
+                            <li class="nav-item dropdown"><span class="nav-link dropdown-toggle" href="#" id="product"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Sản
+                                    phẩm</span>
+                                <div class="dropdown-menu bg-green">
+                                    <a class="dropdown-item text-white" href="products-raucu.html">Rau củ tươi
+                                        Organic</a>
+                                    <a class="dropdown-item text-white" href="products-traicay.html">Trái cây sạch
+                                        organic</a>
+                                    <a class="dropdown-item text-white" href="products-ngucoc.html">Các Loại Hạt, Ngũ
+                                        Cốc</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="how-to-buy.html">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Liên Hệ</a>
+                            </li>
+                        </ul>
+                        <div class="nav-right text-white pl-3">
+                            <span class="d-inline-block px-2" data-toggle="modal" data-target="#modalLogin"><i
+                                    class="fas fa-sign-in-alt"></i></span>
+                            <a href="shopping-cart.html" class="d-inline-block px-2"><i
+                                    class="fas fa-shopping-cart"></i></a>
+                            <span class="d-inline-block px-2" data-toggle="modal" data-target="#modalSearch"><i
+                                    class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+        </header>
+
+        <!-- Small Banner -->
+        <section class="banner-small">
+            <div class="container">
+                <div class="row content">
+                    <div class="col-12 left">
+                        <button class="btn btn-green">Hướng dẫn</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="container">
+
+            <!-- How to buy -->
+            <section class="how-to-buy">
+                <h2 class="title-section text-center mt-5">Hướng dẫn mua hàng</h2>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy">
+                        <img src="./img/search.png" alt="Buy" class="img-fluid w-100">
+                        <p class="text-center mt-2 px-2">Tìm kiếm và lựa chọn sản phẩm mong muốn</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy">
+                        <img src="./img/cart.png" alt="Buy" class="img-fluid w-100">
+                        <p class="text-center mt-2 px-2">Thêm sản phẩm vào giỏ hàng</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy">
+                        <img src="./img/computer.png" alt="Buy" class="img-fluid w-100">
+                        <p class="text-center mt-2 px-2">Điền các thông tin cần thiết</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy">
+                        <img src="./img/delivery.png" alt="Buy" class="img-fluid w-100">
+                        <p class="text-center mt-2 px-2">Organic Food giao hàng tận nơi theo yêu cầu của khách hàng </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step to buy -->
+            <section class="steps">
+                <div class="grey-box box"></div>
+                <div class="green-box box">
+                    <p class="py-2">Bước 1: Lựa chọn sản phẩm mong muốn theo từng danh mục.</p>
+                    <p class="py-2">Bước 2: Bấm nút "Thêm vào giỏ" để thêm một đơn vị sản phẩm vào giỏ hàng. </p>
+                    <p class="py-2">Bước 3: Chọn thanh toán, quý khách hàng điền các thông tin cần thiết.</p>
+                    <p class="py-2">Bước 4: Organic Food sẽ giao hàng tận nơi nếu khách hàng có yêu cầu.</p>
+                </div>
+            </section>
+
+            <!-- FAQs -->
+            <section class="faqs mb-5">
+                <h2 class="title-section text-center mt-5">FAQs</h2>
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <div class="accordion" id="accordion1">
+                            <div class="card my-3">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Organic là gì?
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        Nhãn USDA Organic đảm bảo cho người tiêu dùng về chất lượng và tính toàn vẹn của
+                                        sản phẩm hữu cơ. Các vận hành được chứng nhận Hữu cơ phải có một phương án hệ
+                                        thống hữu cơ và các số liệu vận hành được chứng thực là tuân thủ theo phương án
+                                        này. Ngoài ra, còn có những cuộc kiểm tra ngẫu nhiên đến các nhà sản xuất, để
+                                        đảm bảo sản phẩm phải đạt những tiêu chuẩn đã đề ra.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card my-3">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Nhãn USDA có ý nghĩa gì?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        Các sản phẩm dinh dưỡng công thức organic được chế biến từ nguyên liệu siêu sạch
+                                        sẽ cung cấp đầy đủ dưỡng chất cần thiết, quan trọng, giúp trẻ phát triển một
+                                        cách toàn diện, hoàn toàn tự nhiên về trí tuệ, chiều cao và cân nặng. Dòng sản
+                                        phẩm dinh dưỡng công thức organic còn được bổ sung nguồn lipid đa dạng tốt cho
+                                        sự phát triển não và võng mạc của trẻ.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card my-3">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Tại sao sản phẩm hữu cơ lại thường đắt hơn?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        Nhãn USDA Organic đảm bảo cho người tiêu dùng về chất lượng và tính toàn vẹn của
+                                        sản phẩm hữu cơ. Các vận hành được chứng nhận Hữu cơ phải có một phương án hệ
+                                        thống hữu cơ và các số liệu vận hành được chứng thực là tuân thủ theo phương án
+                                        này. Ngoài ra, còn có những cuộc kiểm tra ngẫu nhiên đến các nhà sản xuất, để
+                                        đảm bảo sản phẩm phải đạt những tiêu chuẩn đã đề ra.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card my-3">
+                                <div class="card-header" id="headingfour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            Nhãn USDA có ý nghĩa gì?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingfour"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        Các sản phẩm dinh dưỡng công thức organic được chế biến từ nguyên liệu siêu sạch
+                                        sẽ cung cấp đầy đủ dưỡng chất cần thiết, quan trọng, giúp trẻ phát triển một
+                                        cách toàn diện, hoàn toàn tự nhiên về trí tuệ, chiều cao và cân nặng. Dòng sản
+                                        phẩm dinh dưỡng công thức organic còn được bổ sung nguồn lipid đa dạng tốt cho
+                                        sự phát triển não và võng mạc của trẻ.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="accordion" id="accordion2">
+                            <div class="card my-3">
+                                <div class="card-header" id="headingOne2">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true"
+                                            aria-controls="collapseOne2">
+                                            Thực phẩm hữu cơ có hương vị ngon không?
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        Nhãn USDA Organic đảm bảo cho người tiêu dùng về chất lượng và tính toàn vẹn của
+                                        sản phẩm hữu cơ. Các vận hành được chứng nhận Hữu cơ phải có một phương án hệ
+                                        thống hữu cơ và các số liệu vận hành được chứng thực là tuân thủ theo phương án
+                                        này. Ngoài ra, còn có những cuộc kiểm tra ngẫu nhiên đến các nhà sản xuất, để
+                                        đảm bảo sản phẩm phải đạt những tiêu chuẩn đã đề ra.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card my-3">
+                                <div class="card-header" id="headingTwo2">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false"
+                                            aria-controls="collapseTwo2">
+                                            Hữu cơ và tự nhiên có giống nhau không?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        Các sản phẩm dinh dưỡng công thức organic được chế biến từ nguyên liệu siêu sạch
+                                        sẽ cung cấp đầy đủ dưỡng chất cần thiết, quan trọng, giúp trẻ phát triển một
+                                        cách toàn diện, hoàn toàn tự nhiên về trí tuệ, chiều cao và cân nặng. Dòng sản
+                                        phẩm dinh dưỡng công thức organic còn được bổ sung nguồn lipid đa dạng tốt cho
+                                        sự phát triển não và võng mạc của trẻ.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card my-3">
+                                <div class="card-header" id="headingThree2">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false"
+                                            aria-controls="collapseThree2">
+                                            Thực phẩm hữu cơ có tốt như bạn nghĩ?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree2" class="collapse" aria-labelledby="headingThree2"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        Nhãn USDA Organic đảm bảo cho người tiêu dùng về chất lượng và tính toàn vẹn của
+                                        sản phẩm hữu cơ. Các vận hành được chứng nhận Hữu cơ phải có một phương án hệ
+                                        thống hữu cơ và các số liệu vận hành được chứng thực là tuân thủ theo phương án
+                                        này. Ngoài ra, còn có những cuộc kiểm tra ngẫu nhiên đến các nhà sản xuất, để
+                                        đảm bảo sản phẩm phải đạt những tiêu chuẩn đã đề ra.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card my-3">
+                                <div class="card-header" id="headingFour2">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour2" aria-expanded="false"
+                                            aria-controls="collapseFour2">
+                                            Sản phẩm organic có điểm gì khác biệt?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour2" class="collapse" aria-labelledby="headingFour2"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        Các sản phẩm dinh dưỡng công thức organic được chế biến từ nguyên liệu siêu sạch
+                                        sẽ cung cấp đầy đủ dưỡng chất cần thiết, quan trọng, giúp trẻ phát triển một
+                                        cách toàn diện, hoàn toàn tự nhiên về trí tuệ, chiều cao và cân nặng. Dòng sản
+                                        phẩm dinh dưỡng công thức organic còn được bổ sung nguồn lipid đa dạng tốt cho
+                                        sự phát triển não và võng mạc của trẻ.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-4 my-3">
+                        <h3 class="text-bold">SAIGON ORGANIC FOOD</h3>
+                        <p>Organic Food farm cam kết chất lượng an toàn vệ sinh thực phẩm và khẳng định như vậy. Điều đó
+                            khẳng định sự tồn tại của chúng tôi. “Uy Tín” được Organic Food đặt lên hàng đầu, hợp tác,
+                            chia sẻ, tin cậy, … gắn bó lâu dài. </p>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4 my-3">
+                        <h3 class="text-bold">ĐỊA CHỈ</h3>
+                        <p>332 Phan Văn Trị, Phường 11, Quận Bình Thạnh</p>
+                        <p><span class="text-bold">Phone: </span>0865 222 9868</p>
+                        <p>
+                            <span class="text-bold">Open Time: </span>
+                        <ul class="pl-5">
+                            <li> Thứ 2-6 : 8:00- 20:00</li>
+                            <li>Thứ 7-CN : 10:00-16:00</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4 my-3">
+                        <h3 class="text-bold">CHI NHÁNH</h3>
+                        <p class="text-bold">Chi nhánh phân phối Tp Hồ Chí Minh:</p>
+                        <p>Cơ sở 1: 332 Phan Văn Trị, Phường 11, Quận Bình Thạnh</p>
+                        <p class="mt-2 text-bold">Chi nhánh phân phối Hà Nội:</p>
+                        <p>Cơ sở 2: 332 Phan Văn Trị, Phường 11, Cầu Giấy</p>
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1165.240017219142!2d106.69256502138306!3d10.781825956030586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3118cfc1d3%3A0xd699e7fa09f30f46!2sOrganic+Food+Store!5e0!3m2!1sen!2s!4v1565246394360!5m2!1sen!2s"
+                        width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal for Search -->
+        <div class="modal fade" id="modalSearch" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="modalSearchLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSearchLabel">Tìm Kiếm</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="d-flex">
+                            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="button" data-dismiss="modal">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Login -->
+        <div class="modal fade" id="modalLogin" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="modalLoginLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLoginLabel">Đăng nhập</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <section class="ftco-section">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        <div class="wrap row">
+                                            <div class="col-md-6"><img src="./img/login.png" alt="login"
+                                                    class="img-fluid w-100"></div>
+                                            <div class="login-wrap p-4 p-md-3 col-lg-6">
+                                                <div class="d-flex">
+                                                    <div class="w-100">
+                                                        <h3 class="mb-4 title-section">Đăng nhập</h3>
+                                                    </div>
+                                                </div>
+                                                <form action="#" class="signin-form">
+                                                    <div class="form-group mb-3">
+                                                        <label class="label" for="name">Tên Đăng Nhập</label>
+                                                        <input type="text" class="form-control" placeholder="Username"
+                                                            required>
+                                                    </div>
+                                                    <div class="form-group mb-3">
+                                                        <label class="label" for="password">Mật Khẩu</label>
+                                                        <input type="password" class="form-control"
+                                                            placeholder="Password" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button type="submit"
+                                                            class="form-control btn btn-green btn-login rounded submit px-3">Đăng
+                                                            nhập</button>
+                                                    </div>
+                                                    <div class="form-group d-md-flex">
+                                                        <div class="w-50 text-left">
+                                                            <label class="checkbox-wrap checkbox-primary mb-0">Lưu mật
+                                                                khẩu
+                                                                <input type="checkbox" checked>
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="w-50 text-md-right">
+                                                            <a href="#">Quên Mật Khẩu</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <p class="text-center">Chưa có tài khoản? <a data-toggle="modal"
+                                                        href="#modalSignUp" data-dismiss="modal" class="text-bold">Đăng
+                                                        ký</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Sign Up -->
+        <div class="modal fade" id="modalSignUp" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="modalSignUpLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSignUpLabel">Đăng Ký</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <section class="ftco-section">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        <div class="wrap row">
+                                            <div class="col-md-6"><img src="./img/signup.png" alt="login"
+                                                    class="img-fluid w-100"></div>
+                                            <div class="login-wrap p-4 p-md-4 col-lg-6">
+                                                <div class="d-flex">
+                                                    <div class="w-100">
+                                                        <h3 class="mb-4 title-section">Đăng Ký</h3>
+                                                    </div>
+                                                </div>
+                                                <form action="#" class="signin-form">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group mb-3">
+                                                                <label class="label" for="name">Tên Đăng Nhập</label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Username" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group mb-3">
+                                                                <label class="label" for="name">Email</label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Email" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group mb-3">
+                                                                <label class="label" for="fullName">Họ tên</label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Full Name" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group mb-3">
+                                                                <label class="label" for="phone">Số điện thoại</label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Phone Number" required>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group mb-3">
+                                                                <label class="label" for="password">Mật Khẩu</label>
+                                                                <input type="password" class="form-control"
+                                                                    placeholder="Password" required>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group mb-3">
+                                                                <label class="label" for="password2">Nhắc lại Mật
+                                                                    Khẩu</label>
+                                                                <input type="password2" class="form-control"
+                                                                    placeholder="Repeat your password" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-12">
+                                                            <div class="w-75 text-left">
+                                                                <label class="checkbox-wrap checkbox-primary mb-0">
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="checkmark"></span>
+                                                                    Tôi đồng ý với các điều khoản
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-12">
+                                                            <button type="submit"
+                                                                class="form-control btn btn-green btn-login rounded submit px-3">Đăng
+                                                                Ký</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <p class="text-center">Đã có tài khoản? <a data-toggle="modal"
+                                                        href="#modalLogin" class="text-bold" data-dismiss="modal">Đăng
+                                                        Nhập</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Bootstrap -->
+    <script src="./js/libs/jquery.js"></script>
+    <script src="./js/libs/popper.min.js"></script>
+    <script src="./js/libs/bootstrap.min.js"></script>
+
+    <!-- My JS -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

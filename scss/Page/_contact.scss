@@ -1,0 +1,22 @@
+.contact-page {
+    .banner-small {
+        background-image: url("../../img/contact/bannerSP.png");
+    }
+
+    .maps {
+        min-height: 400px;
+    }
+
+    .address {
+        margin: 150px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact-page {
+        .address {
+            margin: 50px 0;
+        }
+    }
+    
+}
