@@ -7,6 +7,11 @@
             font-size: 24px;
         }
     }
+
+    .countdown {
+        font-size: 70px !important;
+    }
+    
 }
 
 .organic-good {
@@ -132,6 +137,17 @@
 }
 
 @media screen and (max-width: 768px) {
+    .banner {
+        .carousel-item {
+            .title {
+                font-size: 36px;
+            }
+            .detail {
+                display: none;
+            }
+        }
+        
+    }
 
     .organic-good {
         .item {
