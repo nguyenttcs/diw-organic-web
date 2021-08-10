@@ -19,6 +19,9 @@
     <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+	<!-- Shopping Cart CSS -->
+	<link rel="stylesheet" href="./css/libs/shop.css">
+
     <!-- My Style CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -28,61 +31,61 @@
     <div class="wrapper products-page how-to-buy-page">
         <!-- Header & nav -->
         <header>
-            <div class="logo text-center py-2 bg-beie">
-                <a href="index.html"><img src="./img/logo.png" class="img-fluid" alt="Logo"></a>
-            </div>
+			<div class="logo text-center py-2 bg-beie">
+				<a href="index.html"><img src="./img/logo.png" class="img-fluid" alt="Logo"></a>
+			</div>
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-green py-2">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
-                        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-green py-2">
+				<div class="container">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
+						aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-                    <div class="collapse navbar-collapse" id="navbarMain">
-                        <ul class="navbar-nav mr-auto py-2">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Trang Chủ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">Giới Thiệu</a>
-                            </li>
-                            <li class="nav-item dropdown"><span class="nav-link dropdown-toggle" href="#" id="product"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Sản
-                                    phẩm</span>
-                                <div class="dropdown-menu bg-green">
-                                    <a class="dropdown-item text-white" href="products-raucu.html">Rau củ tươi
-                                        Organic</a>
-                                    <a class="dropdown-item text-white" href="products-traicay.html">Trái cây sạch
-                                        organic</a>
-                                    <a class="dropdown-item text-white" href="products-ngucoc.html">Các Loại Hạt, Ngũ
-                                        Cốc</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="how-to-buy.html">Hướng dẫn mua hàng</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Liên Hệ</a>
-                            </li>
-                        </ul>
-                        <div class="nav-right text-white pl-3">
-                            <span class="d-inline-block px-2" data-toggle="modal" data-target="#modalLogin"><i
-                                    class="fas fa-sign-in-alt"></i></span>
-                            <a href="shopping-cart.html" class="d-inline-block px-2"><i
-                                    class="fas fa-shopping-cart"></i></a>
-                            <span class="d-inline-block px-2" data-toggle="modal" data-target="#modalSearch"><i
-                                    class="fas fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-        </header>
+					<div class="collapse navbar-collapse" id="navbarMain">
+						<ul class="navbar-nav mr-auto py-2">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Trang Chủ</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">Giới Thiệu</a>
+							</li>
+							<li class="nav-item dropdown"><span class="nav-link dropdown-toggle" href="#" id="product"
+									role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Sản
+									phẩm</span>
+								<div class="dropdown-menu bg-green">
+									<a class="dropdown-item text-white" href="products-raucu.html">Rau củ tươi
+										Organic</a>
+									<a class="dropdown-item text-white" href="products-traicay.html">Trái cây sạch
+										organic</a>
+									<a class="dropdown-item text-white" href="products-ngucoc.html">Các Loại Hạt, Ngũ
+										Cốc</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="blog.html">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="how-to-buy.html">Hướng dẫn mua hàng</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Liên Hệ</a>
+							</li>
+						</ul>
+						<div class="nav-right text-white pl-3">
+							<span class="d-inline-block px-2" data-toggle="modal" data-target="#modalLogin"><i
+									class="fas fa-sign-in-alt"></i></span>
+							<a href="#" class="d-inline-block px-2 position-relative" data-toggle="modal" data-target="#shoppingCart">
+								<i class="fas fa-shopping-cart"></i>
+								<span class="badge bg-warning" id="sl"></span>
+							</a>
+							<span class="d-inline-block px-2" data-toggle="modal" data-target="#modalSearch"><i
+									class="fas fa-search"></i></span>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
 
         <!-- Small Banner -->
         <section class="banner-small">
@@ -560,6 +563,35 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal for Shopping Cart -->
+		<div class="modal fade" id="shoppingCart">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Giỏ hàng</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="cart-row d-flex"> <span class="cart-item cart-header cart-column">ITEM</span> <span
+								class="cart-price cart-header cart-column">PRICE</span> <span
+								class="cart-quantity cart-header cart-column">QUANTITY</span> </div>
+						<div class="cart-items"> </div>
+						<div class="cart-total"> <strong class="cart-total-title">Total</strong> <span
+								class="cart-total-price text-danger">0</span><span> vnđ</span> </div>
+						<a href="checkout.html"><button class="btn btn-primary btn-purchase" type="button">Thanh
+							toán</button></a>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+        
     </div>
 
     <!-- JS Bootstrap -->
@@ -567,6 +599,9 @@
     <script src="./js/libs/popper.min.js"></script>
     <script src="./js/libs/bootstrap.min.js"></script>
 
+    <!-- JS for Shopping Cart -->
+	<script src="./js/shop.js"></script>
+    
     <!-- My JS -->
     <script src="./js/main.js"></script>
 

@@ -7,9 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Iris-Organic Web</title>
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="./css/libs/bootstrap.min.css">
 
@@ -28,7 +25,7 @@
 </head>
 
 <body>
-	<div class="wrapper blog-page">
+	<div class="wrapper products-page checkout-page">
 		<!-- Header & nav -->
 		<header>
 			<div class="logo text-center py-2 bg-beie">
@@ -75,7 +72,8 @@
 						<div class="nav-right text-white pl-3">
 							<span class="d-inline-block px-2" data-toggle="modal" data-target="#modalLogin"><i
 									class="fas fa-sign-in-alt"></i></span>
-							<a href="#" class="d-inline-block px-2 position-relative" data-toggle="modal" data-target="#shoppingCart">
+							<a href="#" class="d-inline-block px-2 position-relative" data-toggle="modal"
+								data-target="#shoppingCart">
 								<i class="fas fa-shopping-cart"></i>
 								<span class="badge bg-warning" id="sl"></span>
 							</a>
@@ -92,172 +90,128 @@
 			<div class="container">
 				<div class="row content">
 					<div class="col-md-3 left">
-						<button class="btn btn-green">Blogs</button>
-					</div>
-					<div class="col-md-9 text-bold right">
-						Thực phẩm hữu cơ (Organic) là gì? Liệu chúng có tốt như tin đồn? Đó là những vướng mắc của khá
-						nhiều người khi muốn đặt niềm tin vào một nguồn thực phẩm sạch được đánh giá là xu hướng của xã
-						hội hiện đại. Cụ thể hơn thì, nếu bạn đang băn khoăn giữa một mớ rau hữu cơ và một mớ rau thông
-						thường, một vài thông tin sau có lẽ sẽ giúp bạn ít nhiều cho quyết định cuối cùng đấy nhé!
+						<button class="btn btn-green">Thanh Toán</button>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Main Content -->
-		<main>
-			<section id="blog">
-				<div class="container">
-					<div class="row mt-5">
-						<div class="col-md-8">
-							<div class="row">
-								<div class="col-md-6 mt-3">
-									<img src="img/Blog/Blog.jpg" alt="Blog" class="img-fluid w-100" />
-									<p> October 12, 2017 </p>
-									<h3> Trà xanh thay đổi thực phẩm ăn uống của bạn</h3>
-									<a href="#" class="see-more text-bold"> XEM THÊM <i
-											class="fa fa-angle-double-right"> </i> </a>
+		<main class="container my-5">
+			<section id="checkout">
+				<div class="row">
+					<div class="col-12">
+						<div class="info">
+							<form action="/action_page.php">
+								<div class="row">
+									<div class="col-md-6">
+										<label for="fname"><i class="fa fa-user"></i> Tên đầy đủ </label>
+										<input type="text" id="fname" name="firstname" placeholder="Nguyễn Vân Anh">
+									</div>
+
+									<div class="col-md-6">
+										<label for="fname">Những loại thẻ được chấp nhận</label>
+										<div class="icon-container">
+											<i class="fa fa-cc-visa"></i>
+											<i class="fa fa-cc-amex"></i>
+											<i class="fa fa-cc-mastercard"></i>
+											<i class="fa fa-cc-discover"></i>
+										</div>
+									</div>
 								</div>
 
-								<div class="col-md-6 mt-3">
-									<img src="img/Blog/Blog1.jpg" alt="Blog" class="img-fluid w-100" />
-									<p> October 12, 2017 </p>
-									<h3> Thực phẩm hữu cơ cho người cao tuổi </h3>
-									<a href="#" class="see-more text-bold"> XEM THÊM <i
-											class="fa fa-angle-double-right"> </i> </a>
+								<div class="row">
+									<div class="col-md-6">
+										<label for="email"><i class="fa fa-envelope"></i> Email</label>
+										<input type="text" id="email" name="email" placeholder="anhnguyen@gmail.com">
+									</div>
+									<div class="col-md-6">
+										<label for="cname">Tên chủ thẻ</label>
+										<input type="text" id="cname" name="cardname" placeholder="Nguyễn Vân Anh">
+									</div>
 								</div>
 
-								<div class="col-md-6 mt-3">
-									<img src="img/Blog/Blog2.jpg" alt="Blog" class="img-fluid w-100" />
-									<p> October 12, 2017 </p>
-									<h3> 14 lý do nên uống trà xanh hữu cơ </h3>
-									<a href="#" class="see-more text-bold"> XEM THÊM <i
-											class="fa fa-angle-double-right"> </i> </a>
+								<div class="row">
+									<div class="col-md-6">
+										<label for="adr"><i class="fa fa-address-card-o"></i> Địa chỉ </label>
+										<input type="text" id="adr" name="address"
+											placeholder="71/49 Điện Biên Phủ, phường 15">
+									</div>
+									<div class="col-md-6">
+										<label for="ccnum">Số thẻ</label>
+										<input type="text" id="ccnum" name="cardnumber"
+											placeholder="1111-2222-3333-4444">
+									</div>
 								</div>
 
-								<div class="col-md-6 mt-3">
-									<img src="img/Blog/Blog3.jpg" alt="Blog" class="img-fluid w-100" />
-									<p> October 12, 2017 </p>
-									<h3> Mẹo trồng sản phẩm hữu cơ của riêng bạn</h3>
-									<a href="#" class="see-more text-bold"> XEM THÊM <i
-											class="fa fa-angle-double-right"> </i> </a>
+								<div class="row">
+									<div class="col-md-6">
+										<label for="city"><i class="fa fa-institution"></i> Quận </label>
+										<input type="text" id="city" name="city" placeholder="Bình Thạnh">
+									</div>
+									<div class="col-md-6">
+										<label for="expmonth">Tháng hết hạn</label>
+										<input type="text" id="expmonth" name="expmonth" placeholder="Tháng 9">
+									</div>
 								</div>
 
-								<div class="col-md-6 mt-3">
-									<img src="img/Blog/Blog4.jpg" alt="Blog" class="img-fluid w-100" />
-									<p> October 12, 2017 </p>
-									<h3> 9 thực phẩm hữu cơ tốt nhất cho trẻ em </h3>
-									<a href="#" class="see-more text-bold"> XEM THÊM <i
-											class="fa fa-angle-double-right"> </i> </a>
+								<div class="row">
+									<div class="col-md-6"></div>
+									<div class="col-md-6"></div>
 								</div>
 
-								<div class="col-md-6 mt-3">
-									<img src="img/Blog/Blog5.jpg" alt="Blog" class="img-fluid w-100" />
-									<p> October 12, 2017 </p>
-									<h3> 6 lý do bạn nên ăn theo chế độ ăn kiêng hữu cơ </h3>
-									<a href="#" class="see-more text-bold"> XEM THÊM <i
-											class="fa fa-angle-double-right"> </i> </a>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-6">
+												<label for="state">Thành phố</label>
+												<input type="text" id="state" name="state" placeholder="Hồ Chí Minh">
+											</div>
+											<div class="col-md-6">
+												<label for="zip">Mã bưu chính</label>
+												<input type="text" id="zip" name="zip" placeholder="700000">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-6">
+												<label for="expyear">Năm hết hạn</label>
+												<input type="text" id="expyear" name="expyear" placeholder="2020">
+											</div>
+											<div class="col-md-6">
+												<label for="cvv">CVV</label>
+												<input type="text" id="cvv" name="cvv" placeholder="352">
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 right mt-3 py-3">
-							<h3 class="title-section"> Tìm kiếm </h3>
-							<div class="input-group mb-3 search">
-								<input type="text" class="form-control" placeholder="Tìm...">
-								<div class="input-group-append">
-									<span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
-								</div>
-							</div>
-
-							<h3 class="title-section mt-4"> Sản phẩm </h3>
-							<div class="d-flex flex-column">
-								<a class="d-inline-block py-1 product-link" href="products-traicay.html">Trái cây</a>
-								<a class="d-inline-block py-1 product-link" href="products-raucu.html">Rau củ</a>
-								<a class="d-inline-block py-1 product-link" href="products-ngucoc.html">Ngũ cốc, hạt</a>
-							</div>
-
-							<h3 class="title-section mt-4"> Bài đăng mới nhất </h3>
-							<div class="row new-article pb-3">
-								<div class="col-md-6 mt-3" style="margin-top: 10px">
-									<img src="img/Blog/new.png" alt="Blog" class="img-fluid w-100">
-								</div>
-								<div class="col-md-6 mt-3" style="margin-top: 10px">
-									<p>Trà xanh thay đổi thực phẩm ăn uống của bạn</p>
-								</div>
-							</div>
-
-							<div class="row new-article pb-3">
-								<div class="col-md-6 mt-3">
-									<img src="img/Blog/new1.png" alt="Blog" class="img-fluid w-100">
-								</div>
-								<div class="col-md-6 mt-3">
-									<p>Thực phẩm hữu cơ cho người cao tuổi</p>
-								</div>
-							</div>
-							<div class="row new-article pb-3">
-								<div class="col-md-6 mt-3">
-									<img src="img/Blog/new2.png" alt="Blog" class="img-fluid w-100">
-								</div>
-								<div class="col-md-6 mt-3">
-									<p>14 lý do nên uống trà xanh hữu cơ</p>
-								</div>
-							</div>
-							<div class="row new-article pb-3">
-								<div class="col-md-6 mt-3">
-									<img src="img/Blog/new3.png" alt="Blog" class="img-fluid w-100">
-								</div>
-								<div class="col-md-6 mt-3">
-									<p>Mẹo trồng sản phẩm hữu cơ của riêng bạn</p>
-								</div>
-							</div>
-							<div class="row new-article pb-3">
-								<div class="col-md-6 mt-3">
-									<img src="img/Blog/new4.png" alt="Blog" class="img-fluid w-100">
-								</div>
-								<div class="col-md-6 mt-3">
-									<p>6 lý do bạn nên ăn theo chế độ ăn kiêng hữu cơ</p>
-								</div>
-							</div>
-							<div class="row pb-3">
-								<div class="col-12 mt-3">
-									<img src="img/Blog/ads.png" alt="Blog" class="img-fluid w-100">
-								</div>
-							</div>
+								<label>
+									<input type="checkbox" checked="checked" name="sameadr"> Giao hàng đến địa chỉ được
+									ghi
+									trên hóa đơn
+								</label>
+								<input type="button" value="THANH TOÁN" class="btn" onClick="thanhtoan()">
+							</form>
 						</div>
 					</div>
 				</div>
-			</section>
 
-
-			<section id="pagination">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-7">
-							<nav aria-label="Page navigation example">
-								<ul class="pagination">
-									<li class="page-item active"><a class="page-link" href="#">1</a></li>
-									<li class="page-item"><a class="page-link" href="#">2</a></li>
-									<li class="page-item"><a class="page-link" href="#">3</a></li>
-									<li class="page-item"><a class="page-link" href="#">4</a></li>
-									<li class="page-item"><a class="page-link" href="#">5</a></li>
-									<li class="page-item">
-										<a class="page-link" href="#" aria-label="Next">
-											<span aria-hidden="true">&raquo;</span>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-
-						<div class="col-md-5 right">
-							<p style="margin-top: 20px; color: #58732F" class="text-right"> Hiển thị 1-12 trong 42 kết
-								quả</p>
-						</div>
+				<hr>
+				<div class="row">
+					<div class="container" style="margin-bottom: 50px; margin-top: 30px">
+						<h4 style="color:#58732F; font-size: 20px; font-weight: bold"> Giỏ hàng <span class="price"
+								style="color:#58732F; font-weight: bold"><i class="fa fa-shopping-cart"></i>
+								<b>4</b></span></h4>
+						<p><a href="#">Dưa hấu</a> <span class="price">30.000 VND</span></p>
+						<p><a href="#">Sầu riêng</a> <span class="price">90.000 VND</span></p>
+						<p><a href="#"> Bí xanh </a> <span class="price">25.000 VND</span></p>
+						<p><a href="#"> Rau cần</a> <span class="price">15.000 VND</span></p>
+						<hr>
+						<h3 style="color:#58732F;  font-weight: bold"> Tổng cộng <span class="price"
+								style="color:#58732F"><b>160.000 VND</b></span></h3>
 					</div>
 				</div>
 			</section>
-
 		</main>
 
 		<!-- Footer -->
@@ -534,7 +488,7 @@
 
 	<!-- JS for Shopping Cart -->
 	<script src="./js/shop.js"></script>
-	
+
 	<!-- My JS -->
 	<script src="./js/main.js"></script>
 

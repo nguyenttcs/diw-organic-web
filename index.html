@@ -19,6 +19,9 @@
 	<!-- Animate -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+	<!-- Shopping Cart CSS -->
+	<link rel="stylesheet" href="./css/libs/shop.css">
+
 	<!-- My Style CSS -->
 	<link rel="stylesheet" href="./css/styles.css" />
 
@@ -72,16 +75,16 @@
 						<div class="nav-right text-white pl-3">
 							<span class="d-inline-block px-2" data-toggle="modal" data-target="#modalLogin"><i
 									class="fas fa-sign-in-alt"></i></span>
-							<a href="shopping-cart.html" class="d-inline-block px-2"><i
-									class="fas fa-shopping-cart"></i></a>
+							<a href="#" class="d-inline-block px-2 position-relative" data-toggle="modal" data-target="#shoppingCart">
+								<i class="fas fa-shopping-cart"></i>
+								<span class="badge bg-warning" id="sl"></span>
+							</a>
 							<span class="d-inline-block px-2" data-toggle="modal" data-target="#modalSearch"><i
 									class="fas fa-search"></i></span>
 						</div>
 					</div>
 				</div>
 			</nav>
-
-
 		</header>
 
 		<!-- Hero Banner -->
@@ -598,6 +601,34 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Modal for Shopping Cart -->
+		<div class="modal fade" id="shoppingCart">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Giỏ hàng</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="cart-row d-flex"> <span class="cart-item cart-header cart-column">ITEM</span> <span
+								class="cart-price cart-header cart-column">PRICE</span> <span
+								class="cart-quantity cart-header cart-column">QUANTITY</span> </div>
+						<div class="cart-items"> </div>
+						<div class="cart-total"> <strong class="cart-total-title">Total</strong> <span
+								class="cart-total-price text-danger">0</span><span> vnđ</span> </div>
+						<a href="checkout.html"><button class="btn btn-primary btn-purchase" type="button">Thanh
+							toán</button></a>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- JS Bootstrap -->
@@ -605,6 +636,9 @@
 	<script src="./js/libs/popper.min.js"></script>
 	<script src="./js/libs/bootstrap.min.js"></script>
 
+	<!-- JS for Shopping Cart -->
+	<script src="./js/shop.js"></script>
+	
 	<!-- My JS -->
 	<script src="./js/count-down.js"></script>
 	<script src="./js/main.js"></script>

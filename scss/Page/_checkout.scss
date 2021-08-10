@@ -1,0 +1,78 @@
+.checkout-page {
+
+    .banner-small {
+        background-image: url("../../img/checkout/bannerSP.png");
+    }
+
+    #checkout {
+        .info {
+            background-color: #ffffff;
+            padding: 30px 20px 25px 20px;
+            border: 1px solid #58732f;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid #58732f;
+            border-radius: 5px;
+            height: 40px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+            color: #58732f;
+        }
+
+        h3,
+        a {
+            color: #4e4e4e;
+        }
+
+        a {
+            &:hover {
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+
+        .btn {
+            background-color: #58732f;
+            color: #f2f0eb;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 17px;
+
+            &:hover {
+                background-color: #fff;
+                border: 1px solid #58732f;
+                color: #58732f;
+                font-weight: bold;
+            }
+        }
+
+        hr {
+            border: 0.5px solid #58732f;
+        }
+
+        span.price {
+            float: right;
+            color: #4e4e4e;
+        }
+    }
+}

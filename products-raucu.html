@@ -16,6 +16,9 @@
 	<!-- Animate -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+	<!-- Shopping Cart CSS -->
+	<link rel="stylesheet" href="./css/libs/shop.css">
+
 	<!-- My Style CSS -->
 	<link rel="stylesheet" href="./css/styles.css" />
 
@@ -69,16 +72,16 @@
 						<div class="nav-right text-white pl-3">
 							<span class="d-inline-block px-2" data-toggle="modal" data-target="#modalLogin"><i
 									class="fas fa-sign-in-alt"></i></span>
-							<a href="shopping-cart.html" class="d-inline-block px-2"><i
-									class="fas fa-shopping-cart"></i></a>
+							<a href="#" class="d-inline-block px-2 position-relative" data-toggle="modal" data-target="#shoppingCart">
+								<i class="fas fa-shopping-cart"></i>
+								<span class="badge bg-warning" id="sl"></span>
+							</a>
 							<span class="d-inline-block px-2" data-toggle="modal" data-target="#modalSearch"><i
 									class="fas fa-search"></i></span>
 						</div>
 					</div>
 				</div>
 			</nav>
-
-
 		</header>
 
 		<!-- Small Banner -->
@@ -106,9 +109,12 @@
 					<div class="row mt-5">
 						<div class="col-md-9">
 							<ul class="d-flex">
-								<li class="active"><button class="btn btn-green"><a href="products-raucu.html"> Rau Củ </a></button></li>
-								<li class="ml-2"><button class="btn btn-white"><a href="products-traicay.html"> Trái Cây </a></button></li>
-								<li class="ml-2"><button class="btn btn-white"><a href="products-ngucoc.html"> Ngũ Cốc-Hạt </a></button>
+								<li class="active"><button class="btn btn-green"><a href="products-raucu.html"> Rau Củ
+										</a></button></li>
+								<li class="ml-2"><button class="btn btn-white"><a href="products-traicay.html"> Trái Cây
+										</a></button></li>
+								<li class="ml-2"><button class="btn btn-white"><a href="products-ngucoc.html"> Ngũ
+											Cốc-Hạt </a></button>
 								</li>
 							</ul>
 						</div>
@@ -136,163 +142,152 @@
 			<section class="sanpham">
 				<div class="container mt-3">
 					<div class="row">
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Dưa Leo</p>
+								<h4 class="shop-item-price">20.000</h4>
 							</div>
-							<p>Dưa Leo</p>
-							<h3>20.000 VND</h3>
+
 						</div>
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau2.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau2.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Súp Lơ</p>
+								<h4 class="shop-item-price">50.000</h4>
 							</div>
-							<p>Súp Lơ</p>
-							<h3>50.000 VND</h3>
 						</div>
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau3.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau3.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Đậu leo</p>
+								<h4 class="shop-item-price">30.000</h4>
 							</div>
-							<p>Đậu leo</p>
-							<h3>30.000 VND</h3>
 						</div>
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau4.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau4.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Khoai tây</p>
+								<h4 class="shop-item-price">70.000</h4>
 							</div>
-							<p>Khoai tây</p>
-							<h3>70.000 VND</h3>
 						</div>
 
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau5.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau5.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Khoai lang</p>
+								<h4 class="shop-item-price">50.000</h4>
 							</div>
-							<p>Khoai lang</p>
-							<h3>50.000 VND</h3>
 						</div>
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau6.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau6.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Cà chua</p>
+								<h4 class="shop-item-price">20.000</h4>
 							</div>
-							<p>Cà chua</p>
-							<h3>20.000 VND</h3>
 						</div>
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau7.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau7.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Ớt chuông</p>
+								<h4 class="shop-item-price">70.000</h4>
 							</div>
-							<p>Ớt chuông</p>
-							<h3>70.000 VND</h3>
 						</div>
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau8.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau8.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Ớt</p>
+								<h4 class="shop-item-price">10.000</h4>
 							</div>
-							<p>Ớt</p>
-							<h3>20.000 VND</h3>
 						</div>
 
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau9.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau9.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Hành Tím</p>
+								<h4 class="shop-item-price">20.000</h4>
 							</div>
-							<p>Hành Tím</p>
-							<h3>20.000 VND</h3>
 						</div>
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau10.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau10.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Hành lá</p>
+								<h4 class="shop-item-price">20.000</h4>
 							</div>
-							<p>Hành lá</p>
-							<h3>20.000 VND</h3>
 						</div>
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau11.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau11.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Nấm</p>
+								<h4 class="shop-item-price">60.000</h4>
 							</div>
-							<p>Nấm</p>
-							<h3>60.000 VND</h3>
 						</div>
-						<div class="col-12 col-md-6 col-lg-3 item">
-							<div class="item-hover">
-								<img src="img/product-raucu/rau12.jpg" class="img-fluid w-100" />
-								<a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-raucu/rau12.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Củ Cải Tím</p>
+								<h4 class="shop-item-price">60.000</h4>
 							</div>
-							<p>Củ cải tím</p>
-							<h3>40.000 VND</h3>
 						</div>
 					</div>
 				</div>
@@ -319,7 +314,8 @@
 						</div>
 
 						<div class="col-md-5 right">
-							<p style="margin-top: 20px; color: #58732F" class="text-right"> Hiển thị 1-12 trong 42 kết quả</p>
+							<p style="margin-top: 20px; color: #58732F" class="text-right"> Hiển thị 1-12 trong 42 kết
+								quả</p>
 						</div>
 					</div>
 				</div>
@@ -369,201 +365,229 @@
 		</footer>
 
 		<!-- Modal for Search -->
-        <div class="modal fade" id="modalSearch" data-backdrop="static" data-keyboard="false" tabindex="-1"
-            aria-labelledby="modalSearchLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalSearchLabel">Tìm Kiếm</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="d-flex">
-                            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="button" data-dismiss="modal">Search</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<div class="modal fade" id="modalSearch" data-backdrop="static" data-keyboard="false" tabindex="-1"
+			aria-labelledby="modalSearchLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalSearchLabel">Tìm Kiếm</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form class="d-flex">
+							<input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success" type="button" data-dismiss="modal">Search</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- Modal for Login -->
-        <div class="modal fade" id="modalLogin" data-backdrop="static" data-keyboard="false" tabindex="-1"
-            aria-labelledby="modalLoginLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalLoginLabel">Đăng nhập</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <section class="ftco-section">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-12">
-                                        <div class="wrap row">
-                                            <div class="col-md-6"><img src="./img/login.png" alt="login"
-                                                    class="img-fluid w-100"></div>
-                                            <div class="login-wrap p-4 p-md-3 col-lg-6">
-                                                <div class="d-flex">
-                                                    <div class="w-100">
-                                                        <h3 class="mb-4 title-section">Đăng nhập</h3>
-                                                    </div>
-                                                </div>
-                                                <form action="#" class="signin-form">
-                                                    <div class="form-group mb-3">
-                                                        <label class="label" for="name">Tên Đăng Nhập</label>
-                                                        <input type="text" class="form-control" placeholder="Username"
-                                                            required>
-                                                    </div>
-                                                    <div class="form-group mb-3">
-                                                        <label class="label" for="password">Mật Khẩu</label>
-                                                        <input type="password" class="form-control"
-                                                            placeholder="Password" required>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <button type="submit"
-                                                            class="form-control btn btn-green btn-login rounded submit px-3">Đăng
-                                                            nhập</button>
-                                                    </div>
-                                                    <div class="form-group d-md-flex">
-                                                        <div class="w-50 text-left">
-                                                            <label class="checkbox-wrap checkbox-primary mb-0">Lưu mật
-                                                                khẩu
-                                                                <input type="checkbox" checked>
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="w-50 text-md-right">
-                                                            <a href="#">Quên Mật Khẩu</a>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                                <p class="text-center">Chưa có tài khoản? <a data-toggle="modal"
-                                                        href="#modalSignUp" data-dismiss="modal" class="text-bold">Đăng
-                                                        ký</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<!-- Modal for Login -->
+		<div class="modal fade" id="modalLogin" data-backdrop="static" data-keyboard="false" tabindex="-1"
+			aria-labelledby="modalLoginLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalLoginLabel">Đăng nhập</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<section class="ftco-section">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-md-12">
+										<div class="wrap row">
+											<div class="col-md-6"><img src="./img/login.png" alt="login"
+													class="img-fluid w-100"></div>
+											<div class="login-wrap p-4 p-md-3 col-lg-6">
+												<div class="d-flex">
+													<div class="w-100">
+														<h3 class="mb-4 title-section">Đăng nhập</h3>
+													</div>
+												</div>
+												<form action="#" class="signin-form">
+													<div class="form-group mb-3">
+														<label class="label" for="name">Tên Đăng Nhập</label>
+														<input type="text" class="form-control" placeholder="Username"
+															required>
+													</div>
+													<div class="form-group mb-3">
+														<label class="label" for="password">Mật Khẩu</label>
+														<input type="password" class="form-control"
+															placeholder="Password" required>
+													</div>
+													<div class="form-group">
+														<button type="submit"
+															class="form-control btn btn-green btn-login rounded submit px-3">Đăng
+															nhập</button>
+													</div>
+													<div class="form-group d-md-flex">
+														<div class="w-50 text-left">
+															<label class="checkbox-wrap checkbox-primary mb-0">Lưu mật
+																khẩu
+																<input type="checkbox" checked>
+																<span class="checkmark"></span>
+															</label>
+														</div>
+														<div class="w-50 text-md-right">
+															<a href="#">Quên Mật Khẩu</a>
+														</div>
+													</div>
+												</form>
+												<p class="text-center">Chưa có tài khoản? <a data-toggle="modal"
+														href="#modalSignUp" data-dismiss="modal" class="text-bold">Đăng
+														ký</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- Modal for Sign Up -->
-        <div class="modal fade" id="modalSignUp" data-backdrop="static" data-keyboard="false" tabindex="-1"
-            aria-labelledby="modalSignUpLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalSignUpLabel">Đăng Ký</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <section class="ftco-section">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-12">
-                                        <div class="wrap row">
-                                            <div class="col-md-6"><img src="./img/signup.png" alt="login"
-                                                    class="img-fluid w-100"></div>
-                                            <div class="login-wrap p-4 p-md-4 col-lg-6">
-                                                <div class="d-flex">
-                                                    <div class="w-100">
-                                                        <h3 class="mb-4 title-section">Đăng Ký</h3>
-                                                    </div>
-                                                </div>
-                                                <form action="#" class="signin-form">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group mb-3">
-                                                                <label class="label" for="name">Tên Đăng Nhập</label>
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="Username" required>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group mb-3">
-                                                                <label class="label" for="name">Email</label>
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="Email" required>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group mb-3">
-                                                                <label class="label" for="fullName">Họ tên</label>
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="Full Name" required>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group mb-3">
-                                                                <label class="label" for="phone">Số điện thoại</label>
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="Phone Number" required>
-                                                            </div>
-                                                        </div>
+		<!-- Modal for Sign Up -->
+		<div class="modal fade" id="modalSignUp" data-backdrop="static" data-keyboard="false" tabindex="-1"
+			aria-labelledby="modalSignUpLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalSignUpLabel">Đăng Ký</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<section class="ftco-section">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-md-12">
+										<div class="wrap row">
+											<div class="col-md-6"><img src="./img/signup.png" alt="login"
+													class="img-fluid w-100"></div>
+											<div class="login-wrap p-4 p-md-4 col-lg-6">
+												<div class="d-flex">
+													<div class="w-100">
+														<h3 class="mb-4 title-section">Đăng Ký</h3>
+													</div>
+												</div>
+												<form action="#" class="signin-form">
+													<div class="row">
+														<div class="col-md-6">
+															<div class="form-group mb-3">
+																<label class="label" for="name">Tên Đăng Nhập</label>
+																<input type="text" class="form-control"
+																	placeholder="Username" required>
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="form-group mb-3">
+																<label class="label" for="name">Email</label>
+																<input type="text" class="form-control"
+																	placeholder="Email" required>
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="form-group mb-3">
+																<label class="label" for="fullName">Họ tên</label>
+																<input type="text" class="form-control"
+																	placeholder="Full Name" required>
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="form-group mb-3">
+																<label class="label" for="phone">Số điện thoại</label>
+																<input type="text" class="form-control"
+																	placeholder="Phone Number" required>
+															</div>
+														</div>
 
-                                                        <div class="col-md-6">
-                                                            <div class="form-group mb-3">
-                                                                <label class="label" for="password">Mật Khẩu</label>
-                                                                <input type="password" class="form-control"
-                                                                    placeholder="Password" required>
-                                                            </div>
-                                                        </div>
+														<div class="col-md-6">
+															<div class="form-group mb-3">
+																<label class="label" for="password">Mật Khẩu</label>
+																<input type="password" class="form-control"
+																	placeholder="Password" required>
+															</div>
+														</div>
 
-                                                        <div class="col-md-6">
-                                                            <div class="form-group mb-3">
-                                                                <label class="label" for="password2">Nhắc lại Mật
-                                                                    Khẩu</label>
-                                                                <input type="password2" class="form-control"
-                                                                    placeholder="Repeat your password" required>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group col-12">
-                                                            <div class="w-75 text-left">
-                                                                <label class="checkbox-wrap checkbox-primary mb-0">
-                                                                    <input type="checkbox" checked>
-                                                                    <span class="checkmark"></span>
-                                                                    Tôi đồng ý với các điều khoản
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group col-12">
-                                                            <button type="submit"
-                                                                class="form-control btn btn-green btn-login rounded submit px-3">Đăng
-                                                                Ký</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                                <p class="text-center">Đã có tài khoản? <a data-toggle="modal"
-                                                        href="#modalLogin" class="text-bold" data-dismiss="modal">Đăng
-                                                        Nhập</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+														<div class="col-md-6">
+															<div class="form-group mb-3">
+																<label class="label" for="password2">Nhắc lại Mật
+																	Khẩu</label>
+																<input type="password2" class="form-control"
+																	placeholder="Repeat your password" required>
+															</div>
+														</div>
+														<div class="form-group col-12">
+															<div class="w-75 text-left">
+																<label class="checkbox-wrap checkbox-primary mb-0">
+																	<input type="checkbox" checked>
+																	<span class="checkmark"></span>
+																	Tôi đồng ý với các điều khoản
+																</label>
+															</div>
+														</div>
+														<div class="form-group col-12">
+															<button type="submit"
+																class="form-control btn btn-green btn-login rounded submit px-3">Đăng
+																Ký</button>
+														</div>
+													</div>
+												</form>
+												<p class="text-center">Đã có tài khoản? <a data-toggle="modal"
+														href="#modalLogin" class="text-bold" data-dismiss="modal">Đăng
+														Nhập</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-outline-success" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for Shopping Cart -->
+		<div class="modal fade" id="shoppingCart">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Giỏ hàng</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="cart-row d-flex"> <span class="cart-item cart-header cart-column">ITEM</span> <span
+								class="cart-price cart-header cart-column">PRICE</span> <span
+								class="cart-quantity cart-header cart-column">QUANTITY</span> </div>
+						<div class="cart-items"> </div>
+						<div class="cart-total"> <strong class="cart-total-title">Total</strong> <span
+								class="cart-total-price text-danger">0</span><span> vnđ</span> </div>
+						<a href="checkout.html"><button class="btn btn-primary btn-purchase" type="button">Thanh
+							toán</button></a>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- JS Bootstrap -->
@@ -571,6 +595,9 @@
 	<script src="./js/libs/popper.min.js"></script>
 	<script src="./js/libs/bootstrap.min.js"></script>
 
+	<!-- JS for Shopping Cart -->
+	<script src="./js/shop.js"></script>
+	
 	<!-- My JS -->
 	<script src="./js/main.js"></script>
 

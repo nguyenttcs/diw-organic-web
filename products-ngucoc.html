@@ -19,6 +19,9 @@
     <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+	<!-- Shopping Cart CSS -->
+	<link rel="stylesheet" href="./css/libs/shop.css">
+
     <!-- My Style CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -72,16 +75,16 @@
 						<div class="nav-right text-white pl-3">
 							<span class="d-inline-block px-2" data-toggle="modal" data-target="#modalLogin"><i
 									class="fas fa-sign-in-alt"></i></span>
-							<a href="shopping-cart.html" class="d-inline-block px-2"><i
-									class="fas fa-shopping-cart"></i></a>
+							<a href="#" class="d-inline-block px-2 position-relative" data-toggle="modal" data-target="#shoppingCart">
+								<i class="fas fa-shopping-cart"></i>
+								<span class="badge bg-warning" id="sl"></span>
+							</a>
 							<span class="d-inline-block px-2" data-toggle="modal" data-target="#modalSearch"><i
 									class="fas fa-search"></i></span>
 						</div>
 					</div>
 				</div>
 			</nav>
-
-
 		</header>
 
         <!-- Small Banner -->
@@ -140,169 +143,158 @@
 
 
             <section class="sanpham">
-                <div class="container mt-3">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/ngucoc.jpg" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>Lúa mì</p>
-                            <h3>20.000 VND</h3>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/ngucoc2.jpg" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>yến mạch</p>
-                            <h3>50.000 VND</h3>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/ngucoc3.jpg" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>lúa mạch đen</p>
-                            <h3>30.000 VND</h3>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/ngucoc4.jpg" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>quinoa</p>
-                            <h3>70.000 VND</h3>
-                        </div>
+				<div class="container mt-3">
+					<div class="row">
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Lúa mì</p>
+								<h4 class="shop-item-price">120.000</h4>
+							</div>
 
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/ngucoc5.jpg" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>gạo lứt</p>
-                            <h3>50.000 VND</h3>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/ngucoc6.jpg" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>ngô</p>
-                            <h3>20.000 VND</h3>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/hat1.png" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>Hạt điều</p>
-                            <h3>70.000 VND</h3>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/hat2.png" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>Hạt Hạnh Nhân</p>
-                            <h3>20.000 VND</h3>
-                        </div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc2.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">yến mạch</p>
+								<h4 class="shop-item-price">500.000</h4>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc3.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">lúa mạch đen</p>
+								<h4 class="shop-item-price">300.000</h4>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc4.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">quinoa</p>
+								<h4 class="shop-item-price">170.000</h4>
+							</div>
+						</div>
 
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/hat3.png" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>Đậu Phộng</p>
-                            <h3>20.000 VND</h3>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/hat4.png" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>Đậu xanh</p>
-                            <h3>20.000 VND</h3>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/hat5.png" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>Hạt bí</p>
-                            <h3>60.000 VND</h3>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 item">
-                            <div class="item-hover">
-                                <img src="img/product-ngucoc/hat6.png" class="img-fluid w-100" />
-                                <a href="product-detail.html" class="overlay">
-									<a href="shopping-cart.html" class="icon" title="Product Detail">
-										<i class="fa fa-shopping-cart"></i> <br />
-										<i class="fa fa-heart"></i>
-									</a>
-								</a>
-                            </div>
-                            <p>Đậu Hà Lan</p>
-                            <h3>40.000 VND</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc5.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">gạo lứt</p>
+								<h4 class="shop-item-price">150.000</h4>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc6.jpg"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">ngô</p>
+								<h4 class="shop-item-price">120.000</h4>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc7.png"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Hạt điều</p>
+								<h4 class="shop-item-price">170.000</h4>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc8.png"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Hạt Hạnh Nhân</p>
+								<h4 class="shop-item-price">560.000</h4>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc9.png"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Đậu Phộng</p>
+								<h4 class="shop-item-price">50.000</h4>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc10.png"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Đậu xanh</p>
+								<h4 class="shop-item-price">120.000</h4>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc11.png"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Hạt bí</p>
+								<h4 class="shop-item-price">160.000</h4>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 item-info">
+							<div class=" text-center item item-hover">
+								<img src="img/product-ngucoc/ngucoc12.png"
+									class="img-fluid w-100 shop-item-image">
+								<div class="overlay icon d-flex align-items-center justify-content-center">
+									<i class="fa fa-shopping-cart shop-item-button mr-3" title="Thêm vào Giỏ Hàng"></i> <br />
+									<a href="product-detail.html" title="Xem Chi Tiết"><i class="fa fa-heart"></i></a>
+								</div>
+								<p class="shop-item-title">Đậu Hà Lan</p>
+								<h4 class="shop-item-price">160.000</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
             <section id="pagination">
                 <div class="container">
@@ -571,6 +563,34 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal for Shopping Cart -->
+		<div class="modal fade" id="shoppingCart">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Giỏ hàng</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="cart-row d-flex"> <span class="cart-item cart-header cart-column">ITEM</span> <span
+								class="cart-price cart-header cart-column">PRICE</span> <span
+								class="cart-quantity cart-header cart-column">QUANTITY</span> </div>
+						<div class="cart-items"> </div>
+						<div class="cart-total"> <strong class="cart-total-title">Total</strong> <span
+								class="cart-total-price text-danger">0</span><span> vnđ</span> </div>
+						<a href="checkout.html"><button class="btn btn-primary btn-purchase" type="button">Thanh
+							toán</button></a>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
 
     <!-- JS Bootstrap -->
@@ -578,6 +598,9 @@
     <script src="./js/libs/popper.min.js"></script>
     <script src="./js/libs/bootstrap.min.js"></script>
 
+    <!-- JS for Shopping Cart -->
+	<script src="./js/shop.js"></script>
+    
     <!-- My JS -->
     <script src="./js/main.js"></script>
 
