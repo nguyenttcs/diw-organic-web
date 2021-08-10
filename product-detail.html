@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/fc38faa136.js" crossorigin="anonymous"></script>
 
     <!-- Animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="./css/libs/animate.css" rel="stylesheet">
 
 	<!-- Shopping Cart CSS -->
 	<link rel="stylesheet" href="./css/libs/shop.css">
@@ -90,7 +90,7 @@
         <!-- Main Content -->
         <main class="container">
             <section class="product-detail my-5">
-                <div class="row detail">
+                <div class="row detail wow fadeInUp">
                     <div class="col-md-6 gallery">
                         <img id="mainImg" src="./img/product-detail/sp1.png" alt="img-change" class="w-100">
                         <div class="d-flex my-2">
@@ -133,7 +133,7 @@
                     </div>
                 </div>
 
-                <div class="row tabs my-5">
+                <div class="row tabs my-5 wow fadeInUp">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                           <a class="nav-link active" id="detail-roduct-tab" data-toggle="tab" href="#detail-roduct" role="tab" aria-controls="detail-roduct" aria-selected="true">CHI TIẾT SẢN PHẨM</a>
@@ -173,7 +173,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="mt-5">
+        <footer class="mt-5 wow fadeInUp">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 col-lg-4 my-3">
@@ -445,11 +445,18 @@
     <script src="./js/libs/popper.min.js"></script>
     <script src="./js/libs/bootstrap.min.js"></script>
 
+    <!-- WOW -->
+	<script src="./js/libs/wow.min.js"></script>
+
     <!-- JS for Shopping Cart -->
 	<script src="./js/shop.js"></script>
     
     <!-- My JS -->
     <script src="./js/main.js"></script>
+
+    <script>
+		new WOW().init();
+	</script>
 
 </body>
 

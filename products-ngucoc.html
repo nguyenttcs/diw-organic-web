@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/fc38faa136.js" crossorigin="anonymous"></script>
 
     <!-- Animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="./css/libs/animate.css" rel="stylesheet">
 
 	<!-- Shopping Cart CSS -->
 	<link rel="stylesheet" href="./css/libs/shop.css">
@@ -107,7 +107,7 @@
         <!-- Main Content -->
         <main class="container">
 
-            <section class="tag-product">
+            <section class="tag-product wow fadeInUp">
                 <div class="container">
                     <div class="row mt-5">
                         <div class="col-md-9">
@@ -142,7 +142,7 @@
             </section>
 
 
-            <section class="sanpham">
+            <section class="sanpham wow fadeInUp">
 				<div class="container mt-3">
 					<div class="row">
 						<div class="col-12 col-md-6 col-lg-3 item-info">
@@ -327,7 +327,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="mt-5">
+        <footer class="mt-5 wow fadeInUp">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 col-lg-4 my-3">
@@ -593,16 +593,23 @@
 		</div>
     </div>
 
-    <!-- JS Bootstrap -->
-    <script src="./js/libs/jquery-3.5.1.slim.min.js"></script>
-    <script src="./js/libs/popper.min.js"></script>
-    <script src="./js/libs/bootstrap.min.js"></script>
+   <!-- JS Bootstrap -->
+   <script src="./js/libs/jquery-3.5.1.slim.min.js"></script>
+   <script src="./js/libs/popper.min.js"></script>
+   <script src="./js/libs/bootstrap.min.js"></script>
 
-    <!-- JS for Shopping Cart -->
-	<script src="./js/shop.js"></script>
-    
-    <!-- My JS -->
-    <script src="./js/main.js"></script>
+   <!-- WOW -->
+   <script src="./js/libs/wow.min.js"></script>
+
+   <!-- JS for Shopping Cart -->
+   <script src="./js/shop.js"></script>
+   
+   <!-- My JS -->
+   <script src="./js/main.js"></script>
+
+   <script>
+       new WOW().init();
+   </script>
 
 </body>
 

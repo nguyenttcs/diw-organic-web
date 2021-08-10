@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/fc38faa136.js" crossorigin="anonymous"></script>
 
     <!-- Animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="./css/libs/animate.css" rel="stylesheet">
 
     <!-- Shopping Cart CSS -->
 	<link rel="stylesheet" href="./css/libs/shop.css">
@@ -100,7 +100,7 @@
 
         <!-- Main Content -->
         <main class="container">
-            <div class="row my-5">
+            <div class="row my-5 wow fadeInUp">
                 <div class="col-md-6 maps mt-4">
                     <iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1165.240017219142!2d106.69256502138306!3d10.781825956030586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3118cfc1d3%3A0xd699e7fa09f30f46!2sOrganic+Food+Store!5e0!3m2!1sen!2s!4v1565246394360!5m2!1sen!2s"
@@ -126,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="row address">
+            <div class="row address wow fadeInUp">
                 <div class="col-md-6 text-center mt-4">
                     <h2 class="title-section">Hà Nội</h2>
                     <p>Chi nhánh phân phối Hà Nội:</p>
@@ -146,7 +146,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="mt-5">
+        <footer class="mt-5 wow fadeInUp">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 col-lg-4 my-3">
@@ -412,16 +412,23 @@
 		</div>
     </div>
 
-    <!-- JS Bootstrap -->
-    <script src="./js/libs/jquery.js"></script>
-    <script src="./js/libs/popper.min.js"></script>
-    <script src="./js/libs/bootstrap.min.js"></script>
+  <!-- JS Bootstrap -->
+  <script src="./js/libs/jquery-3.5.1.slim.min.js"></script>
+  <script src="./js/libs/popper.min.js"></script>
+  <script src="./js/libs/bootstrap.min.js"></script>
 
-    <!-- JS for Shopping Cart -->
-	<script src="./js/shop.js"></script>
-    
-    <!-- My JS -->
-    <script src="./js/main.js"></script>
+  <!-- WOW -->
+  <script src="./js/libs/wow.min.js"></script>
+
+  <!-- JS for Shopping Cart -->
+  <script src="./js/shop.js"></script>
+  
+  <!-- My JS -->
+  <script src="./js/main.js"></script>
+
+  <script>
+      new WOW().init();
+  </script>
 
 </body>
 

@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/fc38faa136.js" crossorigin="anonymous"></script>
 
     <!-- Animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="./css/libs/animate.css" rel="stylesheet">
 
     <!-- Shopping Cart CSS -->
 	<link rel="stylesheet" href="./css/libs/shop.css">
@@ -106,10 +106,10 @@
         <main class="container">
 
             <!-- Core Value -->
-            <section class="core-value">
+            <section class="core-value wow fadeInUp">
                 <h2 class="title-section text-center mt-5">Giá trị cốt lõi</h2>
                 <div class="row mt-4 pb-5">
-                    <div class="col-12 col-md-4 mt-3 core-item">
+                    <div class="col-12 col-md-4 mt-3 core-item wow bounceIn">
                         <div class="text-center w-90">
                             <div class="text-center"><img src="./img/about-page/respect.png" alt="core"
                                     class="img-fluid">
@@ -118,7 +118,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-4 mt-3 core-item">
+                    <div class="col-12 col-md-4 mt-3 core-item wow bounceIn">
                         <div class="text-center w-90">
                             <div class="text-center"><img src="./img/about-page/24-hours.png" alt="core"
                                     class="img-fluid">
@@ -127,7 +127,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-4 mt-3 core-item">
+                    <div class="col-12 col-md-4 mt-3 core-item wow bounceIn">
                         <div class="text-center w-90">
                             <div class="text-center"><img src="./img/about-page/respect.png" alt="core"
                                     class="img-fluid">
@@ -141,7 +141,7 @@
             </section>
 
             <!-- Difference -->
-            <section class="different">
+            <section class="different wow fadeInUp">
                 <h2 class="title-section text-center my-5">Organic Food khác gì với những cửa hàng khác?</h2>
                 <div class="row items">
                     <div class="col-12 col-md-6"><img src="./img/about-page/k1.jpg" alt="img" class="img-fluid"></div>
@@ -182,7 +182,7 @@
             </section>
 
             <!-- Process -->
-            <section class="process">
+            <section class="process wow fadeInUp">
                 <h2 class="title-section text-center my-5">Chúng tôi đã làm gì với Organic Food?</h2>
                 <div class="container content">
                     <div class="row list">
@@ -216,7 +216,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="mt-5">
+        <footer class="mt-5 wow fadeInUp">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 col-lg-4 my-3">
@@ -487,12 +487,18 @@
     <script src="./js/libs/popper.min.js"></script>
     <script src="./js/libs/bootstrap.min.js"></script>
 
+    <!-- WOW -->
+	<script src="./js/libs/wow.min.js"></script>
+
     <!-- JS for Shopping Cart -->
 	<script src="./js/shop.js"></script>
     
     <!-- My JS -->
     <script src="./js/main.js"></script>
 
+    <script>
+		new WOW().init();
+	</script>
 </body>
 
 </html>

@@ -16,8 +16,8 @@
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/fc38faa136.js" crossorigin="anonymous"></script>
 
-	<!-- Animate -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Animate -->
+	<link href="./css/libs/animate.css" rel="stylesheet">
 
 	<!-- Shopping Cart CSS -->
 	<link rel="stylesheet" href="./css/libs/shop.css">
@@ -109,7 +109,7 @@
 			<section id="blog">
 				<div class="container">
 					<div class="row mt-5">
-						<div class="col-md-8">
+						<div class="col-md-8 wow fadeInUp">
 							<div class="row">
 								<div class="col-md-6 mt-3">
 									<img src="img/Blog/Blog.jpg" alt="Blog" class="img-fluid w-100" />
@@ -161,7 +161,7 @@
 							</div>
 						</div>
 
-						<div class="col-md-4 right mt-3 py-3">
+						<div class="col-md-4 right mt-3 py-3 wow fadeInUp">
 							<h3 class="title-section"> Tìm kiếm </h3>
 							<div class="input-group mb-3 search">
 								<input type="text" class="form-control" placeholder="Tìm...">
@@ -261,7 +261,7 @@
 		</main>
 
 		<!-- Footer -->
-		<footer class="mt-5">
+		<footer class="mt-5 wow fadeInUp">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-4 col-lg-4 my-3">
@@ -528,15 +528,22 @@
 	</div>
 
 	<!-- JS Bootstrap -->
-	<script src="./js/libs/jquery-3.5.1.slim.min.js"></script>
-	<script src="./js/libs/popper.min.js"></script>
-	<script src="./js/libs/bootstrap.min.js"></script>
+    <script src="./js/libs/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/libs/popper.min.js"></script>
+    <script src="./js/libs/bootstrap.min.js"></script>
 
-	<!-- JS for Shopping Cart -->
+    <!-- WOW -->
+	<script src="./js/libs/wow.min.js"></script>
+
+    <!-- JS for Shopping Cart -->
 	<script src="./js/shop.js"></script>
-	
-	<!-- My JS -->
-	<script src="./js/main.js"></script>
+    
+    <!-- My JS -->
+    <script src="./js/main.js"></script>
+
+    <script>
+		new WOW().init();
+	</script>
 
 </body>
 

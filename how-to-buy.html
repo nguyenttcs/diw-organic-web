@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/fc38faa136.js" crossorigin="anonymous"></script>
 
     <!-- Animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="./css/libs/animate.css" rel="stylesheet">
 
 	<!-- Shopping Cart CSS -->
 	<link rel="stylesheet" href="./css/libs/shop.css">
@@ -102,26 +102,26 @@
         <main class="container">
 
             <!-- How to buy -->
-            <section class="how-to-buy">
+            <section class="how-to-buy wow fadeInUp">
                 <h2 class="title-section text-center mt-5">Hướng dẫn mua hàng</h2>
 
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy">
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy wow bounceIn">
                         <img src="./img/search.png" alt="Buy" class="img-fluid w-100">
                         <p class="text-center mt-2 px-2">Tìm kiếm và lựa chọn sản phẩm mong muốn</p>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy">
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy wow bounceIn" data-wow-delay="1s">
                         <img src="./img/cart.png" alt="Buy" class="img-fluid w-100">
                         <p class="text-center mt-2 px-2">Thêm sản phẩm vào giỏ hàng</p>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy">
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy wow bounceIn" data-wow-delay="1.5s">
                         <img src="./img/computer.png" alt="Buy" class="img-fluid w-100">
                         <p class="text-center mt-2 px-2">Điền các thông tin cần thiết</p>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy">
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 buy wow bounceIn" data-wow-delay="2s">
                         <img src="./img/delivery.png" alt="Buy" class="img-fluid w-100">
                         <p class="text-center mt-2 px-2">Organic Food giao hàng tận nơi theo yêu cầu của khách hàng </p>
                     </div>
@@ -129,7 +129,7 @@
             </section>
 
             <!-- Step to buy -->
-            <section class="steps">
+            <section class="steps wow fadeInUp">
                 <div class="grey-box box"></div>
                 <div class="green-box box">
                     <p class="py-2">Bước 1: Lựa chọn sản phẩm mong muốn theo từng danh mục.</p>
@@ -140,7 +140,7 @@
             </section>
 
             <!-- FAQs -->
-            <section class="faqs mb-5">
+            <section class="faqs mb-5 wow fadeInUp">
                 <h2 class="title-section text-center mt-5">FAQs</h2>
                 <div class="row my-5">
                     <div class="col-md-6">
@@ -327,7 +327,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="mt-5">
+        <footer class="mt-5 wow fadeInUp">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 col-lg-4 my-3">
@@ -595,15 +595,22 @@
     </div>
 
     <!-- JS Bootstrap -->
-    <script src="./js/libs/jquery.js"></script>
+    <script src="./js/libs/jquery-3.5.1.slim.min.js"></script>
     <script src="./js/libs/popper.min.js"></script>
     <script src="./js/libs/bootstrap.min.js"></script>
+
+    <!-- WOW -->
+	<script src="./js/libs/wow.min.js"></script>
 
     <!-- JS for Shopping Cart -->
 	<script src="./js/shop.js"></script>
     
     <!-- My JS -->
     <script src="./js/main.js"></script>
+
+    <script>
+		new WOW().init();
+	</script>
 
 </body>
 
