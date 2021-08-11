@@ -9,31 +9,31 @@
 }
 @font-face {
   font-family: DarkerGrotesque-Black;
-  src: url("../../fonts/Darker_Grotesque/DarkerGrotesque-Black.ttf");
+  src: url("../fonts/Darker_Grotesque/DarkerGrotesque-Black.ttf");
 }
 @font-face {
   font-family: DarkerGrotesque-Bold;
-  src: url("../../fonts/Darker_Grotesque/DarkerGrotesque-Bold.ttf");
+  src: url("../fonts/Darker_Grotesque/DarkerGrotesque-Bold.ttf");
 }
 @font-face {
   font-family: DarkerGrotesque-ExtraBold;
-  src: url("../../fonts/Darker_Grotesque/DarkerGrotesque-ExtraBold.ttf");
+  src: url("../fonts/Darker_Grotesque/DarkerGrotesque-ExtraBold.ttf");
 }
 @font-face {
   font-family: DarkerGrotesque-Light;
-  src: url("../../fonts/Darker_Grotesque/DarkerGrotesque-Light.ttf");
+  src: url("../fonts/Darker_Grotesque/DarkerGrotesque-Light.ttf");
 }
 @font-face {
   font-family: DarkerGrotesque-Medium;
-  src: url("../../fonts/Darker_Grotesque/DarkerGrotesque-Medium.ttf");
+  src: url("../fonts/Darker_Grotesque/DarkerGrotesque-Medium.ttf");
 }
 @font-face {
   font-family: DarkerGrotesque-Regular;
-  src: url("../../fonts/Darker_Grotesque/DarkerGrotesque-Regular.ttf");
+  src: url("../fonts/Darker_Grotesque/DarkerGrotesque-Regular.ttf");
 }
 @font-face {
   font-family: DarkerGrotesque-SemiBold;
-  src: url("../../fonts/Darker_Grotesque/DarkerGrotesque-SemiBold.ttf");
+  src: url("../fonts/Darker_Grotesque/DarkerGrotesque-SemiBold.ttf");
 }
 /*///////////[ GLOBAL CSS ]//////////*/
 * {
@@ -225,7 +225,7 @@ p {
 }
 
 .banner-small {
-  background-image: url("../../img/about-page/banner-about.png");
+  background-image: url("../img/about-page/banner-about.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -326,7 +326,7 @@ header .navbar.nav-sticky {
 
 /*///////////[ FOOTER ]//////////*/
 footer {
-  background-image: url("../../img/footer.png");
+  background-image: url("../img/footer.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -447,7 +447,7 @@ footer {
   top: 40%;
   right: -10px;
   font-size: 40px;
-  background: url("../../img/arrow.png") no-repeat;
+  background: url("../img/arrow.png") no-repeat;
   width: 28px;
   height: 28px;
 }
@@ -530,7 +530,7 @@ footer {
   flex-direction: row-reverse;
 }
 .about-page .process .content {
-  background-image: url("../../img/about-page/process.jpg");
+  background-image: url("../img/about-page/process.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -573,13 +573,13 @@ footer {
   }
 }
 .products-page .banner-small {
-  background-image: url("../../img/product-raucu/bannerSP.png");
+  background-image: url("../img/product-raucu/bannerSP.png");
 }
 .products-page .banner-small.trai-cay {
-  background-image: url("../../img/product-traicay/bannerSP.png");
+  background-image: url("../img/product-traicay/bannerSP.png");
 }
 .products-page .banner-small.ngu-coc {
-  background-image: url("../../img/product-ngucoc/bannerSP.png");
+  background-image: url("../img/product-ngucoc/bannerSP.png");
 }
 .products-page .sanpham h4 {
   text-align: center;
@@ -654,7 +654,7 @@ footer {
   }
 }
 .blog-page .banner-small {
-  background-image: url("../../img/Blog/bannerSP.jpg");
+  background-image: url("../img/Blog/bannerSP.jpg");
 }
 .blog-page #blog p {
   margin-top: 20px !important;
@@ -692,7 +692,7 @@ footer {
   }
 }
 .how-to-buy-page .banner-small {
-  background-image: url("../../img/how-to-buy/bannerSP.png");
+  background-image: url("../img/how-to-buy/bannerSP.png");
 }
 .how-to-buy-page .steps {
   margin: 100px 0;
@@ -747,7 +747,7 @@ footer {
   }
 }
 .contact-page .banner-small {
-  background-image: url("../../img/contact/bannerSP.png");
+  background-image: url("../img/contact/bannerSP.png");
 }
 .contact-page .maps {
   min-height: 400px;
@@ -812,7 +812,7 @@ footer {
   }
 }
 .checkout-page .banner-small {
-  background-image: url("../../img/checkout/bannerSP.png");
+  background-image: url("../img/checkout/bannerSP.png");
 }
 .checkout-page #checkout .info {
   background-color: #ffffff;
